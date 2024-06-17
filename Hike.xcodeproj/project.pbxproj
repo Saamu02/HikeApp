@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0413C62E2C20275B0069ADBF /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413C62D2C20275B0069ADBF /* CustomBackgroundView.swift */; };
+		0413C6312C2029C80069ADBF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413C6302C2029C80069ADBF /* ColorExtension.swift */; };
 		04AA40352C1EC47500C87CD9 /* HikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA40342C1EC47500C87CD9 /* HikeApp.swift */; };
 		04AA40372C1EC47500C87CD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA40362C1EC47500C87CD9 /* ContentView.swift */; };
 		04AA40392C1EC47600C87CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AA40382C1EC47600C87CD9 /* Assets.xcassets */; };
 		04AA403C2C1EC47600C87CD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AA403B2C1EC47600C87CD9 /* Preview Assets.xcassets */; };
+		04AA40432C20252200C87CD9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA40422C20252200C87CD9 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0413C62D2C20275B0069ADBF /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
+		0413C6302C2029C80069ADBF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		04AA40312C1EC47500C87CD9 /* Hike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AA40342C1EC47500C87CD9 /* HikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeApp.swift; sourceTree = "<group>"; };
 		04AA40362C1EC47500C87CD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04AA40382C1EC47600C87CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AA403B2C1EC47600C87CD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04AA40422C20252200C87CD9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0413C62C2C2027480069ADBF /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				04AA40422C20252200C87CD9 /* CardView.swift */,
+				0413C62D2C20275B0069ADBF /* CustomBackgroundView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		0413C62F2C2029BB0069ADBF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0413C6302C2029C80069ADBF /* ColorExtension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		04AA40282C1EC47500C87CD9 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +74,10 @@
 		04AA40332C1EC47500C87CD9 /* Hike */ = {
 			isa = PBXGroup;
 			children = (
+				0413C62F2C2029BB0069ADBF /* Utility */,
 				04AA40342C1EC47500C87CD9 /* HikeApp.swift */,
 				04AA40362C1EC47500C87CD9 /* ContentView.swift */,
+				0413C62C2C2027480069ADBF /* Component */,
 				04AA40382C1EC47600C87CD9 /* Assets.xcassets */,
 				04AA403A2C1EC47600C87CD9 /* Preview Content */,
 			);
@@ -138,7 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AA40372C1EC47500C87CD9 /* ContentView.swift in Sources */,
+				04AA40432C20252200C87CD9 /* CardView.swift in Sources */,
 				04AA40352C1EC47500C87CD9 /* HikeApp.swift in Sources */,
+				0413C62E2C20275B0069ADBF /* CustomBackgroundView.swift in Sources */,
+				0413C6312C2029C80069ADBF /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
