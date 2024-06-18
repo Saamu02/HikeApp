@@ -75,6 +75,26 @@ struct CardView: View {
                         .scaledToFit()
                 } // MAIN CONTENT VIEW
                 
+                // MARK: - FOOTER VIEW
+                Button(action: {
+                    
+                }, label: {
+                    Text("Exlpore More")
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [
+                                    .customGreenLight,
+                                    .customGreenMedium
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .shadow(color: .black.opacity(0.25), radius: 0.25, x: 1, y: 2) 
+                })
+                .buttonStyle(GradientButton() )
             }
         }
         .frame(width: 320, height: 570)
