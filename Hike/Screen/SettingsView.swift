@@ -66,7 +66,6 @@ struct SettingsView: View {
                 .frame(maxWidth: .infinity)
             }
             .listRowSeparator(.hidden)
-            
 
             Section(
                 header: Text("ABOUT THE APP"),
@@ -77,11 +76,19 @@ struct SettingsView: View {
                 }
                     .padding(.vertical, 8)
             ) {
-                CustomListRowView(
-                    rowIcon: "apps.iphone",
-                    rowLabel: "Application",
-                    rowContent: "HIKE",
-                    rowTintColor: .blue
+                CustomListRowView(rowIcon: "apps.iphone", rowLabel: "Application", rowContent: "HIKE", rowTintColor: .blue)
+                
+                CustomListRowView(rowIcon: "info.circle", rowLabel: "Compatibility", rowContent: "iOS, iPadOS", rowTintColor: .red)
+                
+                CustomListRowView(rowIcon: "swift", rowLabel: "Technology", rowContent: "Swift", rowTintColor: .orange)
+                
+                CustomListRowView(rowIcon: "gear", rowLabel: "Version", rowContent: "1.0", rowTintColor: .purple)
+                
+                CustomListRowView(rowIcon: "ellipsis.curlybraces", rowLabel: "Developer", rowContent: "John Doe", rowTintColor: .mint)
+                
+                CustomListRowView(rowIcon: "paintpalette", rowLabel: "Designer", rowContent: "Robert Petras", rowTintColor: .pink)
+                
+                CustomListRowView(rowIcon: "globe", rowLabel: "Github", rowTintColor: .indigo, rowLinkLabel: "Ussama", rowLinkDestination: "https://github.com/Saamu02"
                 )
             }
         }

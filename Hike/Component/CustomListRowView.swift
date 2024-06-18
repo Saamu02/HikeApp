@@ -11,15 +11,30 @@ struct CustomListRowView: View {
     
     @State var rowIcon: String
     @State var rowLabel: String
-    @State var rowContent: String
+    @State var rowContent: String? = nil
     @State var rowTintColor: Color
+    @State var rowLinkLabel: String? = nil
+    @State var rowLinkDestination: String? = nil
+
     
     var body: some View {
         
         LabeledContent {
-            Text(rowContent)
-                .foregroundStyle(Color.primary)
-                .fontWeight(.heavy)
+            
+            if let rowContent {
+                
+                Text(rowContent)
+                    .foregroundStyle(Color.primary)
+                    .fontWeight(.heavy)
+                
+            } else if let rowLinkLabel, let rowLinkDestination {
+                Link(rowLinkLabel, destination: URL(string: rowLinkDestination)!)
+                    .foregroundStyle(.purple)
+                    .fontWeight(.heavy)
+                
+            } else {
+                /*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
+            }
             
         } label: {
             
@@ -45,10 +60,12 @@ struct CustomListRowView: View {
 #Preview {
     List {
         CustomListRowView(
-            rowIcon: "paintpalette",
-            rowLabel: "Designer",
-            rowContent: "Ussama",
-            rowTintColor: .red
+            rowIcon: "globe",
+            rowLabel: "Github",
+            rowContent: nil,
+            rowTintColor: .red,
+            rowLinkLabel: "Ussama",
+            rowLinkDestination: "https://github.com/Saamu02"
         )
     }
 }
