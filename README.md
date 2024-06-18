@@ -32,4 +32,7 @@ App UI:
 - How to use custom LabeledContent.
 - How to have alternative icons for the app.
 
+
+Also faced some challenges while following the tutorials, as there were some modifiers that were depricated. e.g. cornerRadius and foregroundColor.
+
 Note: I am following the tutorials SwiftUI + SwiftData Masterclass - iOS App Development Swift by Robert Petras.
