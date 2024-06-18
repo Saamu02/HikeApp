@@ -14,6 +14,7 @@ struct SettingsView: View {
         List {
             
             Section {
+                
                 HStack {
                     Spacer()
                     
@@ -65,6 +66,24 @@ struct SettingsView: View {
                 .frame(maxWidth: .infinity)
             }
             .listRowSeparator(.hidden)
+            
+
+            Section(
+                header: Text("ABOUT THE APP"),
+                footer: HStack {
+                    Spacer()
+                    Text("Copyright © All right reserved.")
+                    Spacer()
+                }
+                    .padding(.vertical, 8)
+            ) {
+                CustomListRowView(
+                    rowIcon: "apps.iphone",
+                    rowLabel: "Application",
+                    rowContent: "HIKE",
+                    rowTintColor: .blue
+                )
+            }
         }
     }
 }
