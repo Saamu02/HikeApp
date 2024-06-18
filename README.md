@@ -24,11 +24,12 @@ App UI:
 
 
 # Learning Points:
-- How to create separate UI components
+- How to Add 3d affect to the view.
+- How to create separate UI components.
 - How to use linear gradients.
 - How to create motion animation.
 - The use of drawingGroup() for animations. (This modifier enables high performance metal rendering. We know that SwiftUI uses Core Animation for rendering its view by default. As we built more and more complex animations, it starts to slow down our app. Thats where drawingGroup() came into play. This modifier tells SwiftUI to render the content into offscreen image before returning it to the screen as a single rendered output, which is significantly faster. And behind the scenes, this is powered by metal which is apple native framework for working directly with the GPU for high speed graphics).
-- How to use custom LabeledContent
-- How to have alternative icons for the app
+- How to use custom LabeledContent.
+- How to have alternative icons for the app.
 
 Note: I am following the tutorials SwiftUI + SwiftData Masterclass - iOS App Development Swift by Robert Petras.
