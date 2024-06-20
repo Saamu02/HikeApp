@@ -23,11 +23,18 @@ App UI:
 <img src="https://github.com/Saamu02/HikeApp/assets/126147404/8048a8b8-3729-4f97-92fa-bbf12a43bd3e" width="200" />
 
 
+
+## Video:
+https://github.com/Saamu02/HikeApp/assets/126147404/6e6d6a80-3e60-4d98-a3d1-61e807934007
+
+
+
 # Learning Points:
 - How to Add 3d affect to the view.
 - How to create separate UI components.
 - How to use linear gradients.
-- How to create motion animation.
+- How to create gradient animations.
+- How to create motion animations.
 - The use of drawingGroup() for animations. (This modifier enables high performance metal rendering. We know that SwiftUI uses Core Animation for rendering its view by default. As we built more and more complex animations, it starts to slow down our app. Thats where drawingGroup() came into play. This modifier tells SwiftUI to render the content into offscreen image before returning it to the screen as a single rendered output, which is significantly faster. And behind the scenes, this is powered by metal which is apple native framework for working directly with the GPU for high speed graphics).
 - How to use custom LabeledContent.
 - How to have alternative icons for the app.
