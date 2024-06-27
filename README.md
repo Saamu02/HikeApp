@@ -42,6 +42,9 @@ https://github.com/Saamu02/HikeApp/assets/126147404/6e6d6a80-3e60-4d98-a3d1-61e8
 
 Also faced some challenges while following the tutorials, as there were some modifiers that were depricated. e.g. cornerRadius and foregroundColor.
 
+## 
+## 
+
 Note: I am following the tutorials SwiftUI + SwiftData Masterclass - iOS App Development Swift by Robert Petras.
 
 Reference Link: https://www.udemy.com/course/swiftui-masterclass-course-ios-development-with-swift/
