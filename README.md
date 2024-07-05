@@ -29,7 +29,7 @@ https://github.com/Saamu02/HikeApp/assets/126147404/6e6d6a80-3e60-4d98-a3d1-61e8
 
 
 
-# Learning Points:
+# Important Points:
 - How to Add 3d affect to the view.
 - How to create separate UI components.
 - How to use linear gradients.
